@@ -11,7 +11,7 @@
   <style>
     html {
       box-sizing: border-box;
-      background: #ffc600;
+      background: #000;
       font-family: 'helvetica neue';
       font-size: 20px;
       font-weight: 200;
@@ -35,7 +35,7 @@
     /* */
 
     .panel {
-      background: #6B0F9C;
+      background: #000;
       box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
       color: white;
       text-align: center;
@@ -54,25 +54,26 @@
       display: flex;
       flex-direction: column;
     }
-
+    
+/* far left */
     .panel1 {
-      background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+      background-image: url(https://i.ibb.co/z5DptD8/Screen-Shot-2022-05-05-at-11-23-26-AM.png);
     }
-
+/* second from left */
     .panel2 {
-      background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+      background-image: url(https://i.ibb.co/1bFV6z6/decoder.png);
     }
-
+/* middle */
     .panel3 {
-      background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+      background-image: url(https://i.ibb.co/LPWMGGt/web-portfolio.png);
     }
-
+/* 4th from left */
     .panel4 {
-      background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+      background-image: url(https://i.ibb.co/nmmZTNt/survey.png);
     }
-
+/* far right */
     .panel5 {
-      background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+      background-image: url(https://i.ibb.co/t89DpZC/Screen-Shot-2022-05-05-at-11-53-40-AM.png);
     }
 
     /* Flex Items */
@@ -106,16 +107,17 @@
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
+      font-size: 1em;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .panel p:nth-child(2) {
-      font-size: 4em;
+      font-size: 2em;
     }
 
     .panel.open {
       flex: 5;
-      font-size: 40px;
+      font-size: 30px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -123,34 +125,42 @@
         font-size: 1em;
       }
     }
+
+    a {
+      color: white;
+    }
   </style>
 
-
+<!-- Local Library -->
   <div class="panels">
     <div class="panel panel1">
-      <p>Hey</p>
-      <p>Let's</p>
-      <p>Dance</p>
+      <p><a href="https://github.com/benbeast1210/Local-Library" target="_blank">GitHub Deployment</a></p>
+      <p>Local Library </p>
+      <p>This website will be capable of managing items being borrowed and returned, as well as their borrowers as profiles. Currently, its setup to mimic a library service handling books and their borrowers.</p>
     </div>
+<!-- Decoder Ring -->
     <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
+      <p><a href="https://benbeast1210.github.io/Decoder-RIng/" target="_blank">GitHub Deployment</a></p>
+      <p>The Decoder Ring</p>
+      <p>This project in implements classical coding challenges into a webpage. Test-Driven Developement was prioritized when building this.</p>
     </div>
+<!-- Web Portfolio -->
     <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
+      <p><a href ="https://benbeast1210.github.io/My-Web-Portfolio" target="_blank">GitHub Deployment</a></p>
+      <p>My Web Page</p>
+      <p>Click the link to visit my web page hosted on GitHub. All of my links, files, and projects can be found here.</p>
     </div>
+    <!-- Survey Template -->
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p><a href="https://benbeast1210.github.io/Survey-Form/" target="_blank">GitHub Deployment</a></p>
+      <p>Survey Template</p>
+      <p>This form is complete with 2 text fields, 1 number field, 2 dropdowns, a radio button group, a checkbox group, 2 text areas, and a submit button. Check out the project board to see the additional features I'm planning on implementing!</p>
     </div>
+    <!--  -->
     <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
+      <p><a href="https://benbeast1210.github.io/Drum-Machine/" target="_blank">GitHub Deployment</a></p>
+      <p>Drum Machine</p>
+      <p>This single-page program allows the user to select different keys on the home row, and have corresponding sounds play. This could be reworked into any type of sound-based button box.</p>
     </div>
   </div>
 
@@ -171,7 +181,6 @@
     panels.forEach((panel) => panel.addEventListener('transitionend', toggleActive));
 
   </script>
-
 
 
 </body>
